@@ -1,0 +1,6 @@
+
+curl -o get-pip.py https://raw.github.com/pypa/pip/master/contrib/get-pip.py
+
+sudo python get-pip.py 
+sudo pip install feedparser
+sudo pip install beautifulsoup
