@@ -11,7 +11,7 @@ def main():
     #buildTestSet()
     train = load_files('model/train', encoding='utf-8')
     test = load_files('model/test', encoding='utf-8')
-    print train
+    print train.cc
 #    for l in train.target_names:
 #        print l
 #    for l in train.target:

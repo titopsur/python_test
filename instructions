@@ -1,5 +1,24 @@
+#install pathogen
+mkdir -p ~/.vim/autoload ~/.vim/bundle
+curl -Sso ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+#install colors
+mkdir -p ~/.vim/colors
+curl -Sso ~/.vim/colors/wombat.vim https://raw2.github.com/vim-scripts/Wombat/master/colors/wombat.vim
+curl -Sso ~/.vim/colors/zenburn.vim http://www.vim.org/scripts/download_script.php?src_id=15530 
 curl -o get-pip.py https://raw.github.com/pypa/pip/master/contrib/get-pip.py
-
 sudo python get-pip.py 
 sudo pip install feedparser
 sudo pip install beautifulsoup
+#install sklearn
+sudo apt-get install build-essential python-dev python-numpy python-setuptools python-scipy libatlas-dev libatlas3-base
+sudo pip install -U scikit-learn
+#pylint - syntax checker and more for python
+sudo apt-get install pylint
+#syntastic - pylint in vim 
+#(:Errors to show errors, C-W, C-W to go to error list, and Enter to go to line with the error
+cd ~/.vim/bundle
+git clone https://github.com/scrooloose/syntastic.git
+#install jedi-vim 
+git clone https://github.com/davidhalter/jedi-vim.git
+#status line
+git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
