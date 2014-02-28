@@ -20,7 +20,7 @@
 # SCREEN SETTINGS
 # ------------------------------------------------------------------------------
 
-#startup_message off
+startup_message off
 nethack on
 
 #defflow on # will force screen to process ^S/^Q
